@@ -16,7 +16,7 @@ class Heroku::Command::Emacs < Heroku::Command::Run
 
   def emacs_cmd
     <<-CMD
-curl https://s3-us-west-2.amazonaws.com/heroku-emacs/emacs-24.5-heroku-minimal.tar.gz --location --silent | tar zx -C emacs
+curl https://s3-us-west-2.amazonaws.com/heroku-emacs/emacs-24.5-heroku-minimal.tar.gz --location --silent | tar zx
 export PATH=$PATH:/app/emacs/bin/emacs
 bash
     CMD
